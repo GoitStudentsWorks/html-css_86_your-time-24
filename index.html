@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Watch Spot</title>
+    <link
+      href="
+      https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script type="module" crossorigin src="/html-css_86_your-time-24/assets/index-b48f4db7.js"></script>
+    <link rel="stylesheet" href="/html-css_86_your-time-24/assets/index-733a5c87.css">
+  </head>
+  <body>
+    <!-- Alex -->
+    <header class="top-header">
+  <div class="header-container container">
+    <a href="./index.html" class="header-logo-link">
+      <div class="logo-wrap">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOGSURBVHgBxZhLTuNAEIarISBeCyMe64QTzBwAxtyAG5AbwJyAZMF6orkAmQtMZlZIbBJgg5CAWSMhW2xAPCZBvF+p+St2kONxknZiJ79UatsdV3+pqu62TRSBmNmArcGKsDI7OoKlqd8CxIoHKkgCalA/hIE3WE9F6rXcyOiqClulXgmDfQsBVpeUQfypxiBpPbYaXNUHmaE4hQGSMIv15QWU1qI4xfqTwgvoPzcpDrF+altFUBT9jObwqfVD+mXqjj2g+bsNWJL0xb7WryWKSuxsYd1GrH693hfNksNOaqOCa+h/f3/PULficHVnNYFpgK5Wq/z09FS9vr4u6zAMtIBbI/26s2Ff3WMV0AobPT8/U6VSocvLS7q4uDD29/fT7RwPNIFLosmQvn4opX6hLQV1vry8qJubG0LUGGB1QLq6ulpu45cS9D+cFK/2WvX4+FjZ29ur/z4LM10/9Pb2Jv10f39fOxbQu7s7OVcPDw/SZ+7s7CzNz8//aeK+kgi4GCa1dHBwYBweHmZwuIgolgBWwgT4gsHrMPz6+qrm5uZoeHg4yEWhiWtbfDakmJ0nYO3HotvbWzo9PaWZmRmzUCjUlg0A5ZE65UmlGhkZaQbXSln8YTvhgUuSEz1t2bZdG3hycpLGx8dXxCmgfgOyjOgZklr4VbOzsxRSecDl5cAbwVCpldpC0dP09LREUNpVy7KMVCpVOTs7+y6RE5P+sbExCiGbnFqmD0A3tWkKIaSRZWDA8dTUlAAaiJREkRC9HODKsqwAmEKqltqPM+7gQQCzkY+Pj6snJyd8fn7OqEWZCNL1t+53fX09VyqVOKRyflrlLiuB++Lu7u4nLKw/R0dHlUQLLRmGUau7wcFBqTuSCTA0NOS9zUQEtjc3N82FhYUC7tPdc23YZ9xbaQBsd9fW1lYRICaMYUqg5FhgE4kE/Cn2+JLjbVxbdHeiDOkr1ZBaV4l2d6HGsoiCCVMTExNSdwoREzDygHlldlDT2SA4bWFCWJi1tY3ep6CnF7lWZn11/57CzteDZlBBj/VhlKRuxc63lzBR0VWGopI4azJI0PuvjqJ9eWInin6oTmVxFKkNgCxyY711CpmmOATHZgSAGxSnPFHsBM7iOFLrA1zmzpWmuMWdLzk56pUw2CqH0xH1WuzUoo7y1A+xk+pWn4GlDHr32bcFaNoDWnYjK7tOJJ97/wHsu4QOL5RupQAAAABJRU5ErkJggg== "
+            width="19"
+            height="19"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOGSURBVHgBxZhLTuNAEIarISBeCyMe64QTzBwAxtyAG5AbwJyAZMF6orkAmQtMZlZIbBJgg5CAWSMhW2xAPCZBvF+p+St2kONxknZiJ79UatsdV3+pqu62TRSBmNmArcGKsDI7OoKlqd8CxIoHKkgCalA/hIE3WE9F6rXcyOiqClulXgmDfQsBVpeUQfypxiBpPbYaXNUHmaE4hQGSMIv15QWU1qI4xfqTwgvoPzcpDrF+altFUBT9jObwqfVD+mXqjj2g+bsNWJL0xb7WryWKSuxsYd1GrH693hfNksNOaqOCa+h/f3/PULficHVnNYFpgK5Wq/z09FS9vr4u6zAMtIBbI/26s2Ff3WMV0AobPT8/U6VSocvLS7q4uDD29/fT7RwPNIFLosmQvn4opX6hLQV1vry8qJubG0LUGGB1QLq6ulpu45cS9D+cFK/2WvX4+FjZ29ur/z4LM10/9Pb2Jv10f39fOxbQu7s7OVcPDw/SZ+7s7CzNz8//aeK+kgi4GCa1dHBwYBweHmZwuIgolgBWwgT4gsHrMPz6+qrm5uZoeHg4yEWhiWtbfDakmJ0nYO3HotvbWzo9PaWZmRmzUCjUlg0A5ZE65UmlGhkZaQbXSln8YTvhgUuSEz1t2bZdG3hycpLGx8dXxCmgfgOyjOgZklr4VbOzsxRSecDl5cAbwVCpldpC0dP09LREUNpVy7KMVCpVOTs7+y6RE5P+sbExCiGbnFqmD0A3tWkKIaSRZWDA8dTUlAAaiJREkRC9HODKsqwAmEKqltqPM+7gQQCzkY+Pj6snJyd8fn7OqEWZCNL1t+53fX09VyqVOKRyflrlLiuB++Lu7u4nLKw/R0dHlUQLLRmGUau7wcFBqTuSCTA0NOS9zUQEtjc3N82FhYUC7tPdc23YZ9xbaQBsd9fW1lYRICaMYUqg5FhgE4kE/Cn2+JLjbVxbdHeiDOkr1ZBaV4l2d6HGsoiCCVMTExNSdwoREzDygHlldlDT2SA4bWFCWJi1tY3ep6CnF7lWZn11/57CzteDZlBBj/VhlKRuxc63lzBR0VWGopI4azJI0PuvjqJ9eWInin6oTmVxFKkNgCxyY711CpmmOATHZgSAGxSnPFHsBM7iOFLrA1zmzpWmuMWdLzk56pUw2CqH0xH1WuzUoo7y1A+xk+pWn4GlDHr32bcFaNoDWnYjK7tOJJ97/wHsu4QOL5RupQAAAABJRU5ErkJggg== "
+            width="14"
+            height="14"
+          />
+          <img src="./img/hero/logo(1)(1)(1).png" alt="logotype" />
+        </picture>
+        <p class="logo">thewatchspot</p>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-menu">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#about">About us</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#catalog">Catalog</a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#sale">Sale</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="contact-link" href="tel:+380(68)443-94-26">+380 (68) 443-94-26</a>
+    <button class="mobile-menu-btn" data-menu-open type="button">
+      <svg class="mobile-menu-pic" width="24" height="24">
+        <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-mob-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <main>
+      <!-- Alex -->
+      <section class="hero">
+  <div class="container">
+    <div class="mobile-modal appear" data-menu>
+      <div class="logo-wrap">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOGSURBVHgBxZhLTuNAEIarISBeCyMe64QTzBwAxtyAG5AbwJyAZMF6orkAmQtMZlZIbBJgg5CAWSMhW2xAPCZBvF+p+St2kONxknZiJ79UatsdV3+pqu62TRSBmNmArcGKsDI7OoKlqd8CxIoHKkgCalA/hIE3WE9F6rXcyOiqClulXgmDfQsBVpeUQfypxiBpPbYaXNUHmaE4hQGSMIv15QWU1qI4xfqTwgvoPzcpDrF+altFUBT9jObwqfVD+mXqjj2g+bsNWJL0xb7WryWKSuxsYd1GrH693hfNksNOaqOCa+h/f3/PULficHVnNYFpgK5Wq/z09FS9vr4u6zAMtIBbI/26s2Ff3WMV0AobPT8/U6VSocvLS7q4uDD29/fT7RwPNIFLosmQvn4opX6hLQV1vry8qJubG0LUGGB1QLq6ulpu45cS9D+cFK/2WvX4+FjZ29ur/z4LM10/9Pb2Jv10f39fOxbQu7s7OVcPDw/SZ+7s7CzNz8//aeK+kgi4GCa1dHBwYBweHmZwuIgolgBWwgT4gsHrMPz6+qrm5uZoeHg4yEWhiWtbfDakmJ0nYO3HotvbWzo9PaWZmRmzUCjUlg0A5ZE65UmlGhkZaQbXSln8YTvhgUuSEz1t2bZdG3hycpLGx8dXxCmgfgOyjOgZklr4VbOzsxRSecDl5cAbwVCpldpC0dP09LREUNpVy7KMVCpVOTs7+y6RE5P+sbExCiGbnFqmD0A3tWkKIaSRZWDA8dTUlAAaiJREkRC9HODKsqwAmEKqltqPM+7gQQCzkY+Pj6snJyd8fn7OqEWZCNL1t+53fX09VyqVOKRyflrlLiuB++Lu7u4nLKw/R0dHlUQLLRmGUau7wcFBqTuSCTA0NOS9zUQEtjc3N82FhYUC7tPdc23YZ9xbaQBsd9fW1lYRICaMYUqg5FhgE4kE/Cn2+JLjbVxbdHeiDOkr1ZBaV4l2d6HGsoiCCVMTExNSdwoREzDygHlldlDT2SA4bWFCWJi1tY3ep6CnF7lWZn11/57CzteDZlBBj/VhlKRuxc63lzBR0VWGopI4azJI0PuvjqJ9eWInin6oTmVxFKkNgCxyY711CpmmOATHZgSAGxSnPFHsBM7iOFLrA1zmzpWmuMWdLzk56pUw2CqH0xH1WuzUoo7y1A+xk+pWn4GlDHr32bcFaNoDWnYjK7tOJJ97/wHsu4QOL5RupQAAAABJRU5ErkJggg==" alt="logo" width="14" height="14" />
+        <p class="logo">thewatchspot</p>
+      </div>
+      <button type="button" class="mobile-close-button btns" data-menu-close>
+        <svg class="close-button" width="24" height="24">
+          <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-x-mob-modal"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-nav-menu">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" data-link-about href="#about"
+              >About us</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" data-link-catalog href="#catalog"
+              >Catalog</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" data-link-sale href="#sale">Sale</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-header-wrap">
+      <h1 class="main-header">Welcome to our collection of premium watches</h1>
+      <div class="hero-text-wrap1">
+        <p class="hero-text">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+    </div>
+    <div class="pic-text-wrap">
+      <div class="swiper-text-wrap">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch-tab1-84f751ef.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch-tab1-2x-22eddcfe.jpg 2x"
+                  width="436"
+                  height="255"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch1-7975a1d1.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch1-2x-fdc5666e.jpg 2x"
+                />
+                <img
+                  src="/html-css_86_your-time-24/assets/swipe-watch1-7975a1d1.jpg"
+                  alt="watch model 1"
+                  width="268"
+                  height="200"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch-tab2-6848b4c2.jpg , /html-css_86_your-time-24/assets/swipe-watch-tab2-2x-27ea0526.jpg 2x"
+                  width="436"
+                  height="255"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/swipe-watch2-2x-23d7165c.jpg 2x"
+                />
+                <img
+                  src="../img/hero/swipe-watch2.jpg"
+                  alt="watch model 2"
+                  width="268"
+                  height="200"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch-tab3-64ed63e7.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch-tab3-2x-65d50205.jpg 2x"
+                  width="436"
+                  height="255"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch3-db50ba4e.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch3-2x-4226dd29.jpg 2x"
+                />
+                <img
+                  src="/html-css_86_your-time-24/assets/swipe-watch3-db50ba4e.jpg"
+                  alt="watch model 3"
+                  width="268"
+                  height="200"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch-tab4-d648df29.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch-tab4-2x-26056c49.jpg 2x"
+                  width="436"
+                  height="255"
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/swipe-watch4-2x-197da16d.jpg 2x"
+                />
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="watch model 4"
+                  width="268"
+                  height="200"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch-tab5-726c3035.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch-tab5-2x-99e51b13.jpg 2x"
+                  width="436"
+                  height="255"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="/html-css_86_your-time-24/assets/swipe-watch5-e869af26.jpg 1x, /html-css_86_your-time-24/assets/swipe-watch5-2x-0269101a.jpg 2x"
+                />
+                <img
+                  src="/html-css_86_your-time-24/assets/swipe-watch5-e869af26.jpg"
+                  alt="watch model 5"
+                  width="268"
+                  height="200"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-buttons">
+            <div class="button-prev">
+              <!-- <p class="chevron-icon">&lt</p> -->
+              <svg class="chevron-icon" width="18" height="18">
+                <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-chevron-left-mob"></use>
+              </svg>
+            </div>
+            <div class="button-next">
+              <!-- <p class="chevron-icon">&gt</p> -->
+              <svg class="chevron-icon" width="18" height="18">
+                <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-chevron-next-mob"></use>
+              </svg>
+            </div>
+            <div class="swiper-pagination">
+              <p class="swipe-numbers">05</p>
+            </div>
+            <div class="swap-numbers-wrap">
+              <!-- <p class="swipe-numbers">01</p> -->
+              <p class="swipe-numbers">05</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-text-wrap">
+          <p class="hero-text">
+            Our watches are not just timepieces, but also an expression of your
+            personality and lifestyle. From classic designs to modern ones, we
+            have a watch to suit every taste and occasion.
+          </p>
+        </div>
+      </div>
+      <div class="hero-pic-wrap">
+        <picture class="hero-picture">
+          <source
+            media="(min-width:1158px)"
+            srcset="/html-css_86_your-time-24/assets/hero-pict-desc-cd51d47c.jpg 1x, /html-css_86_your-time-24/assets/hero-pict-desc-2x-14b3f9cb.jpg 2x"
+            width="676"
+            height="394"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/html-css_86_your-time-24/assets/hero-pict-tab-33dfca69.jpg 1x, /html-css_86_your-time-24/assets/hero-pict-tab-2x-c373f883.jpg 2x"
+            width="704"
+            height="410"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/html-css_86_your-time-24/assets/hero-pict-37a8223a.jpg 1x, /html-css_86_your-time-24/assets/hero-pict-2x-c9e9aae0.jpg 2x"
+          />
+          <img
+            src="/html-css_86_your-time-24/assets/hero-pict-37a8223a.jpg"
+            alt="watches on hand"
+            width="335"
+            height="410"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Михайло Лях -->
+      <section id="about" class="about">
+  <div class="container about-container">
+    <div class="about-text">
+      <h2 class="font-about">About us</h2>
+      <ul class="about-text">
+        <li class="font-about-text mardgin">
+          <p class="font-about-text">
+            Welcome to our premium watch collection, where luxury and style meet
+            functionality and precision. Our selection of timepieces embodies
+            the very best in Swiss craftsmanship and engineering, ensuring that
+            you'll always have a reliable and stylish accessory on your wrist.
+          </p>
+        </li>
+        <li class="font-about-text ff">
+          <p class="font-about-text">
+            At our premium watch collection, we believe that a watch is more
+            than just a timekeeping device – it's a statement piece that
+            reflects your personality and style. So why settle for anything less
+            than the best? Browse our collection today and discover the perfect
+            watch for you.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <img src="/html-css_86_your-time-24/assets/watchspot1-347cbe0a.gif" alt="watchspot" class="img-item" />
+  </div>
+</section>
+
+      <!-- Олег Кадетов -->
+      <section class="catalog" id="catalog">
+  <div class="container">
+    <div class="catalog-list-wrp">
+      <h2 class="catalog-title">Catalog</h2>
+
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-1-bdcb7330.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-1-22b0df31.png"
+              alt="Tube Watch S42  Black "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span>
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Tube Watch S42 Date Steel With Black...<br /><span
+              class="catalog-text-span"
+              >€395</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-2-2b2d98db.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-2-0af63c81.png"
+              alt="Avondale Watch Police "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Avondale Watch Police For Men<br /><span class="catalog-text-span"
+              >€800</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-3-3856cf05.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-3-cef0d6fe.png"
+              alt="Diver watch"
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Diver 300M Co-Axial Master Chronomete...<br />
+            <span class="catalog-text-span">€600</span>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-4-475c2d6e.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-4-06f0db00.png"
+              alt="Diver watch  Master Chronometer "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Diver 300M Co-Axial Master Chronometer <br /><span
+              class="catalog-text-span"
+              >€1400</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-5-d71af31e.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-5-1b80db3d.png"
+              alt="Taman Watch By Police "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Taman Watch By Police For Men<br /><span class="catalog-text-span"
+              >€500</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-6-eee55776.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-6-bed641e3.png"
+              alt="Malawi Watch Police "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Malawi Watch Police For Men<br /><span class="catalog-text-span"
+              >€555</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-7-fd1232f3.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-7-ad192c52.png"
+              alt="Diver 300M Co-Axial "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Diver 300M Co-Axial Master Chronometer <br /><span
+              class="catalog-text-span"
+              >€1200</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-8-dd23c83b.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-8-13592a54.png"
+              alt="Greenlane Watch By Police "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Greenlane Watch By Police For Men<br /><span
+              class="catalog-text-span"
+              >€1000</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item hidden-wrp">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-9-dddbdd40.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-9-f013c836.png"
+              alt="Squardrc 5402 Chrono"
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Squardrc 5402 Chrono<br /><span class="catalog-text-span"
+              >€359</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item hidden-wrp">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-10-b7a62bc9.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-10-62ca544a.png"
+              alt="Diver  300M "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Diver 300M Co-Axial Master <br /><span class="catalog-text-span"
+              >€400</span
+            >
+          </p>
+        </li>
+        <li class="catalog-item hidden-wrp">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-11-4e428a2c.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-11-a09dbb4d.png"
+              alt="Citizen watch silver"
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Citizen<br /><span class="catalog-text-span">€519</span>
+          </p>
+        </li>
+        <li class="catalog-item hidden-wrp">
+          <div class="list-wrp">
+            <img
+              class="catalog-images"
+              srcset="/html-css_86_your-time-24/assets/watch-2x-12-76a7dca2.webp 2x"
+              src="/html-css_86_your-time-24/assets/watch-12-e1a316f7.png"
+              alt="Armani Exchange watch Black "
+            />
+            <svg width="24" class="like-svg">
+              <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-heart-catalog"></use>
+            </svg>
+            <p class="catalog-top-text">
+              <span class="top-title">Description</span><br />
+              <span class="bottom-text">
+                Richly detailed with an understated design - the Police Men's
+                Greenlane watch.</span
+              >
+              <br />
+              <span class="top-title">DETAILS & FEATURESTION</span> <br />
+              <span class="bottom-text-no-margin">
+                Gender: man Size: 46x54.5mm Case Colour: Steel Band Material:
+                Metal Case Material: Metal Features: Multifunction Water
+                Resistant: 5 (ATM) Band Colour: Steel.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-img-text">
+            Armani Exchange<br /><span class="catalog-text-span">€400</span>
+          </p>
+        </li>
+      </ul>
+      <div class="btn-wrp">
+        <button class="catalog-btn" data-modal-open type="button">
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close type="button" class="model-close-btn">
+      <svg width="20" height="20" class="model-close-svg">
+        <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-x-mob-modal"></use>
+      </svg>
+    </button>
+    <div class="flex-wrp">
+      <div class="modal-watch">
+        <img
+          class="catalog-images-mod"
+          srcset="/html-css_86_your-time-24/assets/watch-2x-1-bdcb7330.webp 2x"
+          src="/html-css_86_your-time-24/assets/watch-1-22b0df31.png"
+          alt="Tube Watch S42  Black "
+        />
+        <p class="catalog-img-text">
+          Tube Watch S42 Date Steel With Black...<br /><span
+            class="catalog-text-span"
+            >€395</span
+          >
+        </p>
+      </div>
+      <form class="model-form">
+        <div class="input-wrap">
+          <label for="mod-input-name" class="leble-modal">Full name</label>
+          <div class="icon-position">
+            <input
+              class="modal-input"
+              required
+              type="text"
+              id="mod-input-name"
+              name="user-name"
+              placeholder="Enter your full name"
+            />
+          </div>
+        </div>
+        <div class="input-wrap">
+          <label for="mod-input-email" class="leble-modal">Email</label>
+          <div class="icon-position">
+            <input
+              class="modal-input"
+              required
+              type="email"
+              id="mod-input-email"
+              name="user-name"
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <label for="mod-input-tel" class="leble-modal">Card number</label>
+          <div class="icon-position">
+            <input
+              class="modal-input"
+              required
+              type="text"
+              id="mod-input-tel"
+              name="user-name"
+              placeholder="Enter card"
+            />
+          </div>
+        </div>
+        <div class="input-wrap-area">
+          <label for="mod-input-text" class="leble-modal">Comment</label>
+          <textarea
+            name="Enter your text"
+            id="mod-input-text"
+            placeholder="Enter your text"
+            class="textarea-model"
+          ></textarea>
+        </div>
+        <button type="submit" class="model-form-button">SUBMIT</button>
+        <p class="model-bottom-text">
+          By clicking on “Submit” button, you agree to our Privacy Policy, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="../js/modal.js"></script>
+
+      <!-- Nick Solonyy -->
+      <section class="new-watches">
+  <div class="container">
+    <h2 class="section-title">New watches</h2>
+
+    <h3 class="section-title">Green And Bronze—The Match Made In Heaven</h3>
+
+    <ul class="new-watches-imgs">
+      <li class="new-watches-item">
+        <img
+          srcset="/html-css_86_your-time-24/assets/new-watches-1-3ac7a2f5.jpg 1x, /html-css_86_your-time-24/assets/new-watches-1-2x-a1646608.jpg 2x"
+          src="/html-css_86_your-time-24/assets/new-watches-1-3ac7a2f5.jpg"
+          alt="New Watches image one"
+        />
+      </li>
+      <li class="new-watches-item">
+        <img
+          srcset="/html-css_86_your-time-24/assets/new-watches-2-6baea0b8.jpg 1x, /html-css_86_your-time-24/assets/new-watches-2-2x-0d0f5211.jpg 2x"
+          src="/html-css_86_your-time-24/assets/new-watches-2-6baea0b8.jpg"
+          alt="New Watches image two"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- Olya Lupatsa -->
+      <section class="sale" id="sale">
+  <div class="container">
+    <h2 class="section-title">Sale</h2>
+    <div class="sale-sections">
+      <div class="sale-section-1">
+        <div class="sale-images">
+          <ul class="sale-img-list">
+            <li class="sale-img-items">
+              <picture>
+                <source
+                  srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAFAAUAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcEBggDAQL/2gAIAQEAAAAA4nHp98gHR0xznCg2y9s6naxD9WhPbFr1SRInrPsWYrjQa6EjaOy4cdoWpBuNo5+gVtjBtXTuTz5WQFuZ1TRwEl7w/wAP/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAhAAAAAAAAB//8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAAAAAB//8QAMBAAAgICAQIEBAUEAwAAAAAAAQIDBAUREgAGEyEiMRQgQWEHFTAyUSNxkaFygbH/2gAIAQEAAT8A+RYZX/ZE7f2UnowTqNtDIB91P6Pbfac9SMLku2+41Jgi4nFpFe5a9+Ys6Ef2C9ZTtivJSlFXtjvJ5yUCi9Uq1K/7hvnLAS69dw0ZsbmshTnqPWkSTZhdzIVDgMPUdE+R+ftTD4/Jz2ZMnO0cESgKqAl5JG9gvWJr9s9ti5NX7uz+O5rGHjrzJI5Yb1zAjkI+3WWuYDJVbOGv/iB3I8riMtXuTJHEyhg3qbwlH++u7O2MNTp2LeMvWGngKF4rR27xnQ5KfqBv5lVnZUUEsSAAPck9YnB26WOnlqo7NEpe3PGOfgJ5bZgNkJ9N/Vuq4nz9XET4rE/164evPZtIHSfi+4mQeZDAHidD6DrP5vP3MzSy/dGAisYmV0M9WrEGDbJ9ClyxV9+RIPWSxFjMUJ838PajoSE/GC0vAVZpNlSjtoFZPZQPPfl1lsdHjZYYkn8Rmj5OCNEHf/h+XtqFZs1UDDfBZph/yhiaQf7XqtVkqVzmFvw8UhZ/Br2RHPx8P1IwiPNUkMmnP1HXbF2lchn545IIqPOHkkSE1RN5B02ASQPM7B6ir4UyQPgEhjgEywTX0l8OMxK3nIxbXt7lzs66jx92znLtGzlqsdJ61iRoLVtY0Eki8TJWVyA2ygO1HsB1mcMLuJgygn4vAk6aWKSQMkYVwOSAhT6j5t8uKu/l+Rq2z+1GIf7o44sP8HrGwY1oJ79rJNCUQitBWriZrEvA+h1LInBxobJ35eQPVbMyZTDSXlmgjtSRtyphOEshrEaDBieScvIH+4HS9zww4u7ShnlVYn4wll8MFCoLKUcsffY0Ds9Y+Sjla9zuWzasVsmyyVaUMkY+HeMpx2HUlg4Gzorr79dx3plFOhGzCGOJ2P8ADNIdE/4UfN22zvBLG/IwK+n4jZQHzB19QSOsxibfcdTEolLxaGOg8OuKr6JeQ8pZH+pdm8z1LgfhO5o+4+3cHcqSVDDJA07qkMbJGAxZdsWG9kj2PXdeRazNfloIFiUsS0Y1DACd+HD/ANnW+rFuxaEQmfYjUqoAA0Cd/T3P3+btTuH8gvSNLVFmvYURyxkgH38iCfY9YaXulfiTjYMJ27C3AmDN8J5Jm8/XGV9l6zE/esuPtQ2c32rk4ZAFlp0YgtmwpOikbMTpj13vmmgSTttMC+MYNHLOksiySewYDaj9DFz9lMnPM4nL5+Roo+LSTCr4H8oun9YPV6X8OWrOKHZuXxlnaeHcS4J2hPIeoJz9XWWeN8jaaKxYnTnpZbI4ysANbYAnX6FPL5LHhhStNCGChuAA2F9up+4c1ahavYyEkkTa5I2iDo76JJJJ9ySfk//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQIBAT8AT//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQMBAT8AT//Z 1x, data:image/jpeg;base64,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 2x"
+                  media="(min-width: 375px)"
+                />
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image69-tab-2x-min-1547d300.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image69-tab-2x-min-1547d300.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+              <img
+                src="/html-css_86_your-time-24/assets/image69-tab-2x-min-1547d300.jpg"
+                alt="clock-1"
+                width="80"
+                height="80"
+              />
+            </picture>
+            </li>
+            <li class="sale-img-items">
+              <picture>
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image68-mob-2x-min-c5d3ba84.jpg 2x"
+                  media="(min-width: 375px)"
+                />
+                <source
+                  srcset="/html-css_86_your-time-24/assets/image64-tab-min-adbd0773.jpg 1x, /html-css_86_your-time-24/assets/image64-tab-2x-min-1a5b9381.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/html-css_86_your-time-24/assets/image64-tab-min-adbd0773.jpg 1x, /html-css_86_your-time-24/assets/image64-tab-2x-min-1a5b9381.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+              <img
+                src="/html-css_86_your-time-24/assets/image68-mob-2x-min-c5d3ba84.jpg"
+                alt="clock-2"
+                width="80"
+                height="80"
+              />
+            </picture>
+            </li>
+            <li class="sale-img-items">
+              <picture>
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x"
+                  media="(min-width: 375px)"
+                />
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image65-tab-2x-min-18eeb65a.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image65-tab-2x-min-18eeb65a.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="clock-3"
+                width="80"
+                height="80"
+              />
+            </picture>
+            </li>
+            <li class="sale-img-items">
+              <picture>
+                <source
+                  srcset="data:image/jpeg;base64,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 1x, /html-css_86_your-time-24/assets/image66-mob-2x-min-6c2bb420.jpg 2x"
+                  media="(min-width: 375px)"
+                />
+                <source
+                  srcset="/html-css_86_your-time-24/assets/image68-tab-min-6e6edddc.jpg 1x, /html-css_86_your-time-24/assets/image68-tab-2x-min-0a00cd83.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/html-css_86_your-time-24/assets/image68-tab-min-6e6edddc.jpg 1x, /html-css_86_your-time-24/assets/image68-tab-2x-min-0a00cd83.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+              <img
+                src="/html-css_86_your-time-24/assets/image66-mob-2x-min-6c2bb420.jpg"
+                alt="clock-4"
+                width="80"
+                height="80"
+              />
+            </picture>
+            </li>
+          </ul>
+          <div class="sale-image-large">
+            <picture>
+              <source
+                srcset="/html-css_86_your-time-24/assets/image67-mob-min-min-aa11748a.jpg 1x, /html-css_86_your-time-24/assets/image67-mob-2x-min-min-302c6b46.jpg 2x"
+                media="(min-width: 375px)"
+              />
+              <source
+                srcset="/html-css_86_your-time-24/assets/image67-tab-min-min-30ff7628.jpg 1x, /html-css_86_your-time-24/assets/image67-tab-2x-min-min-5eb196ae.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/sale/image-min.jpg    1x,
+                  ./img/sale/image-2x-min.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+            <img
+              src="/html-css_86_your-time-24/assets/image67-mob-2x-min-min-302c6b46.jpg"
+              alt="clock"
+              width="235"
+              height="614"
+            />
+          </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="sale-section-2">
+        <div class="sale-classy-s">
+          <h3 class="sale-subtitle">Greenlane Watch By Police For MenHT</h3>
+          <div class="sale-classy-s-1">
+            <p class="sale-text">Product tag: PEWJK2227003</p>
+            <div class="sale-prices">
+              <p class="sale-price">€700</p>
+              <p class="sale-price-crossed">€1000</p>
+            </div>
+          </div>
+        </div>
+        <div class="sale-section-3">
+          <div class="sale-info">
+            <div class="sale-info-1">
+              <h4 class="sale-info-subtitle">DESCRIPTION</h4>
+            </div>
+            <div>
+              <p class="sale-info-text">
+                Richly detailed with an understated design - the Police Men’s
+                Greenlane watch features a versatile multifunction design that
+                fits effortlessly into work and play. The steel case is adorned
+                with a semi-transparent black dial. The timepiece exhibits a
+                contrast through a black IP bracelet with matching crown and
+                pushers.
+              </p>
+            </div>
+          </div>
+          <div class="sale-info">
+            <div class="sale-info-1">
+              <p class="sale-info-subtitle">DETAILS & FEATURESTION</p>
+            </div>
+            <div>
+              <p class="sale-info-text">
+                Gender: man <br />
+                Size: 46x54.5mm <br />
+                Case Colour: Steel <br />
+                Band Material: Metal <br />
+                Case Material: Metal <br />
+                Features: Multifunction <br />
+                Water Resistant: 5 (ATM) <br />
+                Band Colour: Steel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <!-- Sanya Stereotype -->
+    <footer class="footer__cont">
+  <div class="wrap__ftr container">
+    <div class="three-section">
+      <!-----------DIV-1-------->
+      <div class="wrap__one">
+        <a href="./index.html" class="logo-footer-link">
+          <img
+            alt="logo"
+            class="logo-footer"
+            srcset="data:image/png;base64,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 2x"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAGwUExURUdwTP////////////////////////////////////////////////////////7+/v///////////////+np6f///9vb2+rq6uTk5Ozs7Pz8/M7Ozujo6P39/f///5+fn8XFxbKysrW1tb29vfj4+P////n5+ZeXl8/Pz/Hx8djY2NHR0crKyt/f3+Dg4Nra2v///7a2tt7e3u/v7/r6+vPz89fX19DQ0PT09NXV1cnJyfv7+7S0tNzc3Hx8fM3Nze/v77m5uZOTk+vr66ysrN7e3qysrObm5tfX18XFxe/v74SEhJycnPf39+/v76ioqMbGxpycnNPT0/////7+/vj4+Pn5+cfHx+Tk5O3t7eHh4fv7+/Hx8eLi4vT09MDAwPb29vLy8vX19cTExPz8/PPz88XFxdzc3MvLy729vdTU1Li4uLCwsKKioqqqqvr6+tLS0s7Ozv39/aampuXl5evr69fX166ursnJydbW1r+/v9HR0djY2M/Pz93d3e/v7+bm5srKyrW1tdXV1Y6Ojry8vJaWlqenp6CgoPf39/Dw8Lq6uqSkpJSUlLS0tMHBwQMw2voAAABTdFJOUwC/f58g72D+3xCAQDBwz/7uX6CP/pD+/v7+/v7+f28wYL7+/u8/70AQgP7+P8/+/tC/73D+/v7+/v7+/v7+v/7+/kBw/v6/7r8wIO5Q/hC/P/6QOkxc7AAAAjJJREFUSMeVVtW2pDAQbBigYXyv67q7u7tbMXbdfd3d3X55H4DdIYQJtx44nECdru5UukMkhaNrJuyUQUnh6CY86AkZWRv/kErEWGKiDrkkDIShzseo/50BaEqKLVKUYXRBFpjTjRkZRCgwnYYbYkcIqs1JQQa7AcMSsvCjIBNfX6FaHLxqi5DFfrQ1MYylkt/9t9YYWWY0BnsPjqlzXlYsL1ShtEG97ZrGPoH5fnmgZ+d6hRsBKxNEce+Mtmzd271c4UbYRBoAwD20v73v8b2pVStUbjxFlAPgdg11Dr58VZldefvWOvHohhnfLxE5JneN1aptHd5SabXtIe9I3Tj/6zJR75Va9ciLgyWhhpYXpDm8Onnj51miq+em594NzwmMlMyNQOX079nrRDdn/pxYGBNMbUjcCIwc/jTVfZ7owo+FL+NyWaIbn40f+3Cm5yLRta+fR8OfWuWyyjMHXr89/q2X6OTH94Isv1rb/eqtLXvrD6ertZEJFB2io2/ClKywN8sePJkffnq3raNzaAJg6BEB0Vaz43ll07bBR5P9LjOAosRFIjbv29jXvqffDTxvWepOu6VlYHfh/+nVNIUsItpVKjDikJc3vmL9UQyzTSNhQ1aPGQfMkGqLH2Za0CFZ6saYxu+1CJa6UR7GT5wTyvI8ylFZjQeMGU2kQeMP6iwy0qqLhSmW2VZO5GYxzCLnvqK+AXIha1mJ7jBNdXlkE96U0kGItJP4PmY02TC1OMJfYSNnhpgwvekAAAAASUVORK5CYII="
+            width="40"
+            height="40"
+          />
+        </a>
+        <ul class="footer-list">
+          <li>
+            <a href="tel:+380684439426" class="tel-footer"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li>
+            <address class="addr_footer">
+              <a
+                href="https://goo.gl/maps/TLP5Nucy1vA4JWKj8"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >1678 S. Pioneer Road Salt Lake City UT 84104</a
+              >
+            </address>
+          </li>
+        </ul>
+      </div>
+      <!-----------DIV-2-------->
+      <div class="wrap__two">
+        <ul>
+          <li><a class="footer-link" href="#about">About us</a></li>
+          <li><a class="footer-link" href="#catalog">Catalog</a></li>
+          <li><a class="footer-link" href="#sale">Sale</a></li>
+        </ul>
+      </div>
+      <!-----------DIV-3-------->
+      <div class="wrap__three">
+        <ul class="list-soc-icons">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <svg class="social-icons" width="24" height="24">
+                <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-facebook-mob"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <svg class="social-icons" width="24" height="24">
+                <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-instagram-mob"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <svg class="social-icons" width="24" height="24">
+                <use href="/html-css_86_your-time-24/assets/icons-c7ac85e2.svg#icon-youtube-mob"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-----------DIV-4-------->
+    <div class="wrap__four">
+      <ul class="bottom-footer-text">
+        <li><p>&copy;2022 The Watch Spot. All rights reserved.</p></li>
+        <li>
+          <div>
+            <a class="addr_footer" href="">Privacy Policy</a>
+            <a class="addr_footer" href="">Terms of Service</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
